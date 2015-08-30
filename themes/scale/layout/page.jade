@@ -1,0 +1,10 @@
+extends base
+
+block global_title
+  | #{page.title} - #{config.title}
+
+block main
+  div.page.is_page
+    h2.page-title #{page.title}
+    div.page-content
+      div.post-content.markdown-body !{page.content}

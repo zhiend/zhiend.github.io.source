@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    include _partial/head
+  body
+    section.zhiend
+      include _partial/header
+      div.zhimain
+        div.container
+          div#pjax-container
+            block main
+              | main
+    section.footer
+      div.container
+        | &copy; 2015
+    include _partial/scripts
